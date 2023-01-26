@@ -1,4 +1,6 @@
-
+.header{
+  background-color: #e1c022;
+}
 
 /* NAV */ 
 
@@ -20,7 +22,6 @@
     color: black;
     position: relative;
     text-decoration: none;
-    font-size: 20px;
   }
   
   .nav a::before,

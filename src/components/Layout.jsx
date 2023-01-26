@@ -4,14 +4,14 @@ import "./Layout.css";
 const Layout = ({ children }) => {
   return (
     <div>
-      <header className="flex  h-[15vh] w-full justify-evenly items-center">
+      <header className="flex  h-[14vh] w-full justify-evenly items-center  border-b">
         <img
           className="  w-56  h-20"
           src="../../Logo approved.png"
           alt="Bayamo Medical Center"
         />
 
-        <ul className="nav flex">
+        <ul className="nav flex text-2xl   ">
           <li className="active">
             <a href="#">Inicio</a>
           </li>
@@ -25,11 +25,11 @@ const Layout = ({ children }) => {
             <a href="#">Historia</a>
           </li>
         </ul>
-        <button className="bg-indigo-800  px-4  py-3 text-white rounded-3xl hover:scale-110 transition-all">
+        <button className="bg-indigo-800  px-5 py-4 text-white rounded-full border border-red-200 hover:scale-110 transition-all text-xl shadow-lg">
           Escribenos
         </button>
       </header>
-      <main>{children}</main>
+      <main className="px-20 py-20">{children}</main>
     </div>
   );
 };
