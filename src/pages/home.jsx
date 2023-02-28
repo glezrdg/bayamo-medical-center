@@ -14,10 +14,10 @@ const Home = () => {
           of your body and it will take care of{" "}
           <span className="text-indigo-800 underline font-medium">you</span>.
         </h1>
-        <p className="text-xl mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          aperiam magnam cumque cum est, ipsum voluptas atque aut ipsa quas,
-          cupiditate recusandae deserunt voluptate veritatis deleniti non unde.
+        <p className="text-xl mt-4 text-slate-700">
+          Dr. Luis Del Prado MD (ARNP Specialist) and his wonderful and
+          professional team, is very eager to meet you, your beloved family, and
+          friends!
         </p>
         <div className="w-2/3 flex justify-around mt-12">
           <button className="bg-indigo-800  px-5  py-4 text-white rounded-full hover:scale-105 transition-all text-xl shadow-lg">
