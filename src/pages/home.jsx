@@ -24,7 +24,7 @@ const Home = () => {
             Get Appointment
           </button>
           <button className="border-indigo-800 border-2 rounded-full px-5 py-4 shadow-lg hover:scale-105 hover:bg-indigo-800 hover:text-white transition-all  text-indigo-800 text-xl">
-            View Profile
+            Meet our team!
           </button>
         </div>
       </div>
