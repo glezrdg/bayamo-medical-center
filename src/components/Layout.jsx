@@ -1,6 +1,9 @@
 import React from "react";
 import "./Layout.css";
 
+// icon
+import { AiOutlineMail } from "react-icons/ai";
+
 const Layout = ({ children }) => {
   return (
     <div>
@@ -25,8 +28,8 @@ const Layout = ({ children }) => {
             <a href="#">Historia</a>
           </li>
         </ul>
-        <button className="bg-indigo-800  px-5 py-4 text-white rounded-full border border-red-200 hover:scale-110 transition-all text-xl shadow-lg">
-          Escribenos
+        <button className="bg-indigo-800 flex items-center  px-5 py-4 text-white rounded-full border border-red-200 hover:scale-110 transition-all text-xl shadow-lg">
+          Escribenos <AiOutlineMail className="ml-3" />
         </button>
       </header>
       <main className="px-20 py-20">{children}</main>
