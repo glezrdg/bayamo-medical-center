@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @font-face {
   font-family: 'Biko', sans-serif;
   src: url(./fonts/Biko_Regular.otf), format('OpenType');

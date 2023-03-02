@@ -1,52 +1,11 @@
 import React from "react";
 
-import { carouselServices } from "../utils/carouselServices";
-import { Carousel } from "primereact/carousel";
-import { useState } from "react";
-
-//theme
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-
-//core
-import "primereact/resources/primereact.min.css";
-
-//icons
-import "primeicons/primeicons.css";
+import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
-  const [services, setServices] = useState(carouselServices);
-
-  const responsiveOptions = [
-    {
-      breakpoint: "1199px",
-      numVisible: 1,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "991px",
-      numVisible: 2,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "767px",
-      numVisible: 1,
-      numScroll: 1,
-    },
-  ];
-  const servicesTemplate = (services) => {
-    return (
-      <div className="bg-slate-200 w-5/6  h-5/6 p-5 flex flex-col items-center justify-evenly rounded-md shadow-md  hover:scale-105 transition-all ">
-        <img src={`${services.iconSrc}`} alt="" className=" w-16  h-16" />
-        <h1 className="text-lg font-semibold text-slate-800  ">
-          {services.title}
-        </h1>
-      </div>
-    );
-  };
-
   return (
-    <div className="h-[75vh] flex flex-col items-center justify-end ">
-      <div className="h-48 w-1/2  text-center ">
+    <div className="h-[70vh]  flex flex-col items-center justify-end mt-5 ">
+      <div className="h-48 w-1/2  text-center">
         <h1 className="text-6xl font-bold ">
           Our <span className="text-indigo-800 underline">consulting</span>{" "}
           specialities.
@@ -55,14 +14,21 @@ const Services = () => {
           "All the services under the same roof”
         </p>
       </div>
-
-      <Carousel
-        value={services}
-        numVisible={5}
-        numScroll={3}
-        responsiveOptions={responsiveOptions}
-        itemTemplate={servicesTemplate}
-      />
+      <div className="w-5/6 h-1/2 grid grid-cols-5 grid-rows-2">
+        <ServiceCard icon="./24-7.png" service="24-7 Service" />
+        <ServiceCard icon="./diagnosis.png" service="Specialities" />
+        <ServiceCard icon="./house.png" service="House Visit" />
+        <ServiceCard icon="./lab.png" service="Labs" />
+        <ServiceCard icon="./physical-therapy.png" service="Physical Therapy" />
+        <ServiceCard icon="./primary-doctor.png" service="Primary Medicine" />
+        <ServiceCard icon="./prp.png" service="Platelet Rich Plasma" />
+        <ServiceCard icon="./surgery.png" service="Cosmetic, Minor Surgery" />
+        <ServiceCard icon="./x-ray.png" service="X-Ray" />
+        <ServiceCard
+          icon="./electrocardiogram.png"
+          service="Electrocardiogram"
+        />
+      </div>
     </div>
   );
 };
