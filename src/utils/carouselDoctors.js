@@ -11,27 +11,27 @@ export const carouselDoctors = [
   },
   {
     name: "Dr. Thaimy Del Prado",
-    title: "Assistant",
+    title: "Medical Assistant",
     img: "./thaimy.png",
   },
   {
     name: "Dr. Elizabeth Del Prado",
-    title: "Assistant",
+    title: "Medical Assistant",
     img: "./pavela-2.png",
   },
   {
     name: "Luis del Prado",
-    title: "Assistant",
+    title: "Medical Assistant",
     img: "./luisito.png",
   },
   {
-    name: "Lia Mariena",
-    title: "Conv Assistant",
+    name: "Sara Bumba",
+    title: "Medical Assistant",
     img: "./morena.png",
   },
   {
-    name: "Secretaria",
-    title: "Secretary",
+    name: "Mariela Corvo",
+    title: "Administrator",
     img: "./secretaria.png",
   },
 ];
