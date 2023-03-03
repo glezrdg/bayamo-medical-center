@@ -35,7 +35,7 @@ const Doctors = () => {
   ];
   const doctorsTemplate = (doctors) => {
     return (
-      <div className=" w-80 h-[400px] p-4 bg-slate-100 rounded-md shadow-md flex flex-col items-center hover:scale-105 transition-all">
+      <div className=" w-80 h-[400px] p-4 bg-slate-100 rounded-md shadow-md flex flex-col items-center hover:scale-105 transition-all m-auto">
         <img
           src={`${doctors.img}`}
           alt=""
@@ -55,7 +55,7 @@ const Doctors = () => {
   };
 
   return (
-    <div className="h-[90vh] flex flex-col items-center justify-center  ">
+    <div className="h-[100vh] flex flex-col items-center justify-center  ">
       <div className="h-48 w-full  text-center">
         <h1 className="text-6xl font-bold ">
           Meet our{" "}

@@ -1,6 +1,7 @@
 import { carouselInsurance } from "../utils/carouselInsurance";
 import { Carousel } from "primereact/carousel";
 import { useState } from "react";
+
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 
@@ -36,7 +37,7 @@ const Insurances = () => {
         <img
           src={insurances.img}
           alt=""
-          className="w-80 h-auto  aspect-[3/2] object-contain"
+          className="w-80 h-auto  aspect-[3/2] object-contain m-auto"
         />
         ;
       </div>
@@ -44,7 +45,16 @@ const Insurances = () => {
   };
 
   return (
-    <div className="h-[75vh] w-full bg-slate-100 flex items-center justify-center">
+    <div className="h-[75vh] w-full flex flex-col items-center justify-center">
+      <div className="h-48 w-1/2  text-center">
+        <h1 className="text-6xl font-bold ">
+          We're <span className="text-indigo-800 underline">always</span>{" "}
+          thinking of you.
+        </h1>
+        <p className=" text-xl text-slate-700 mt-5">
+          Here are some of the many we accept.
+        </p>
+      </div>
       <Carousel
         className="w-full"
         value={insurances}

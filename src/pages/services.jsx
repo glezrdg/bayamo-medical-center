@@ -4,7 +4,8 @@ import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="h-[70vh]  flex flex-col items-center justify-end mt-5 ">
+    <div className="h-[100vh]  mt-28 flex flex-col items-center justify-center z-50 mt-5 relative">
+      <div className="absolute top-0 bottom-0 -right-20 -z-10 -left-20 bg-fuchsia-100 "></div>
       <div className="h-48 w-1/2  text-center">
         <h1 className="text-6xl font-bold ">
           Our <span className="text-indigo-800 underline">consulting</span>{" "}
