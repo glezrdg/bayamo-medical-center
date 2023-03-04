@@ -2,15 +2,6 @@ import { Galleria } from "primereact/galleria";
 import { useState } from "react";
 import { galleriaTeam } from "../utils/galleriaTeam";
 
-//theme
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-
-//core
-import "primereact/resources/primereact.min.css";
-
-//icons
-import "primeicons/primeicons.css";
-
 const History = () => {
   const [items, setItems] = useState(galleriaTeam);
 

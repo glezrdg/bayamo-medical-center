@@ -4,6 +4,16 @@ import Services from "./pages/services";
 import Doctors from "./pages/doctors-section";
 import History from "./pages/history";
 import Insurances from "./pages/insurances";
+import Contact from "./pages/contact-us";
+
+//theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+
+//core
+import "primereact/resources/primereact.min.css";
+
+//icons
+import "primeicons/primeicons.css";
 
 const App = () => {
   return (
@@ -13,6 +23,7 @@ const App = () => {
       <Doctors />
       <History />
       <Insurances />
+      <Contact />
     </Layout>
   );
 };

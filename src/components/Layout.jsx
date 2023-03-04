@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
           Escribenos <AiOutlineMail className="ml-3" />
         </button>
       </header>
-      <main className="px-20 py-20">{children}</main>
+      <main className="px-20 pt-20">{children}</main>
     </div>
   );
 };
