@@ -7,3 +7,4 @@
 .p-carousel-items-content	{
     background-color: red;
 }
+@import "~video-react/styles/scss/video-react";
