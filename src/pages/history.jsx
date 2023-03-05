@@ -50,9 +50,12 @@ const History = () => {
   };
 
   return (
-    <div className="h-[70vh] w-full flex justify-center items-center relative">
+    <div
+      id="history"
+      className="h-[100vh] w-full flex justify-center items-center relative"
+    >
       <div className="absolute top-0 bottom-0 -right-20 -z-10 -left-20  bg-stone-100"></div>
-      <div className=" w-2/3 h-4/6 flex text-slate-800">
+      <div className=" w-2/3 h-[45vh]  flex text-slate-800">
         <div className="w-1/2 h-full ml-5 mt-5">
           <h1 className="text-6xl font-bold text-black">
             Behind our{" "}
@@ -73,7 +76,7 @@ const History = () => {
         <div className="h-full  w-1/2 flex flex-col justify-center items-center ">
           <h1 className="text-2xl mb-3">In case you haven't come yet...</h1>
           <iframe
-            className="w-full h-4/6 rounded-md shadow-lg mt-3"
+            className="w-full h-[33vh] rounded-md shadow-lg mt-3"
             src="https://www.youtube-nocookie.com/embed/8FU77bo2lIg?controls=0"
             title="YouTube video player"
             frameborder="0"

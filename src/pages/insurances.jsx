@@ -36,7 +36,10 @@ const Insurances = () => {
   };
 
   return (
-    <div className="h-[75vh] w-full flex flex-col items-center justify-center">
+    <div
+      id="insurances"
+      className="h-[100vh] w-full flex flex-col items-center justify-center"
+    >
       <div className="h-48 w-1/2  text-center">
         <h1 className="text-6xl font-bold ">
           We're <span className="text-indigo-800 underline">always</span>{" "}

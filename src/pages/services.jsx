@@ -4,7 +4,10 @@ import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="h-[100vh]  flex flex-col items-center justify-center mt-5 relative">
+    <div
+      id="services"
+      className="h-[100vh]  flex flex-col items-center justify-center mt-5 relative"
+    >
       <div className="absolute top-0 bottom-0 -right-20 -z-10 -left-20 bg-stone-100 "></div>
 
       <div className="h-48 w-1/2  text-center">
@@ -34,5 +37,13 @@ const Services = () => {
     </div>
   );
 };
+
+// } else {
+//   if (position < item.position && position > positions[i + 1].position) {
+//     if (i === 0) answer = positions[0];
+//     answer = positions[i - 1];
+//     return;
+//   }
+// }
 
 export default Services;

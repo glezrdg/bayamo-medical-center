@@ -55,7 +55,10 @@ const Doctors = () => {
   };
 
   return (
-    <div className="h-[100vh] flex flex-col items-center justify-center  ">
+    <div
+      id="doctors"
+      className="h-[100vh] flex flex-col items-center justify-center  "
+    >
       <div className="h-48 w-full  text-center">
         <h1 className="text-6xl font-bold ">
           Meet our{" "}

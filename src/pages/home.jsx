@@ -2,7 +2,7 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="h-[80vh] flex relative">
+    <div className="h-[80vh] flex relative" id="home">
       <div className=" w-1/2 h-full  flex flex-col pl-48 py-8 items-start justify-start ">
         <span className="font-bold text-2xl uppercase border-red-600 border p-2 text-red-600 shadowred  ">
           Stay strong, live long.
