@@ -13,25 +13,32 @@ const Contact = () => {
         <h1 className="text-7xl font-semibold ">Get in touch with us.</h1>
         <h3 className="mt-3 text-xl">For us to get in touch with you.</h3>
       </div>
-      <div className="w-2/3 h-1/2  flex">
-        <div className="w-1/2 p-5  ">
+      <div className="w-[60vw] h-1/2  flex text-md text-slate-800 ">
+        <div className="w-1/2 p-5">
           <div className="flex justify-between">
-            <div className="flex flex-col">
-              <label htmlFor="">First Name</label>
-              <input type="text" />
+            <div className="flex flex-col w-1/2 mr-2">
+              <label htmlFor="">First name</label>
+              <input
+                type="text"
+                className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
+              />
             </div>
-            <div className="flex flex-col">
-              <label htmlFor="">Last Name</label>
-
-              <input type="text" />
+            <div className="flex flex-col w-1/2 ml-2">
+              <label htmlFor="">Last name</label>
+              <input
+                type="text"
+                className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
+              />
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-5">
             <label htmlFor="">Email</label>
-
-            <input type="text" />
+            <input
+              type="text"
+              className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
+            />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-5">
             <label htmlFor="">Select a Date</label>
             <Calendar
               value={date}
@@ -39,15 +46,22 @@ const Contact = () => {
               showIcon
               showTime
               hourFormat="12"
-              className="h-8"
+              className="w-full  h-9 text-sm text-slate-700 mt-1"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-5">
             <span>Description</span>
-            <textarea name="" id="" rows="3" className="p-2" />
+            <textarea
+              name=""
+              id=""
+              rows="3"
+              className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
+            />
           </div>
-          <button className="p-2 bg-lime-500">Submit</button>
-          <div className="w-full flex justify-around mt-12">
+          <button className="px-4 py-2 mt-4 bg-lime-500 rounded-sm shadow-lg float-right text-stone-100 hidden">
+            Send
+          </button>
+          <div className="w-full flex justify-around mt-10">
             <button className="bg-indigo-800  px-4  py-2 text-white rounded-full hover:scale-105 transition-all text-lg shadow-lg">
               Send us a Message!
             </button>
