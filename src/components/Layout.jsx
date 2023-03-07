@@ -4,6 +4,7 @@ import { useState } from "react";
 
 // icon
 import { AiOutlineMail } from "react-icons/ai";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 const Layout = ({ children }) => {
   const [position, setPosition] = [];
@@ -92,10 +93,12 @@ const Layout = ({ children }) => {
         </a>
       </header>
       <main className="px-20 pt-20 relative">
-        <div className="fixed p-4 w-20 h-20 bg-green-400 flex flex-col top-[50%] right-0 cursor-pointer">
+        <div className="fixed  w-20 h-20 bg-green-400 flex flex-col top-[50%] right-0 cursor-pointer">
+          <BsFillArrowUpCircleFill />
           <a onClick={() => ScrollToScreen("up")} className="text-xl bg-red-50">
-            Up
+            up
           </a>
+
           <a onClick={() => ScrollToScreen("down")} className="text-xl">
             Down
           </a>

@@ -21,27 +21,13 @@ const History = () => {
   ];
 
   const thumbnailTemplate = (items) => {
-    return (
-      <img
-        src={items.thumbnail}
-        onError={(e) =>
-          (e.target.src =
-            "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
-        }
-        alt={items.alt}
-        className=" h-14"
-      />
-    );
+    return <img src={items.thumbnail} alt={items.alt} className=" h-14" />;
   };
   const itemTemplate = (items) => {
     return (
       <div className="w-full h-full ">
         <img
           src={items.img}
-          onError={(e) =>
-            (e.target.src =
-              "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
-          }
           alt={items.alt}
           className="w-[40vw] h-[35vh] object-cover rounded-lg"
         />
@@ -79,9 +65,7 @@ const History = () => {
             className="w-full h-[33vh] rounded-md shadow-lg mt-3"
             src="https://www.youtube-nocookie.com/embed/8FU77bo2lIg?controls=0"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
           ></iframe>
         </div>
       </div>
