@@ -1,6 +1,7 @@
 import { carouselInsurance } from "../utils/carouselInsurance";
 import { Carousel } from "primereact/carousel";
 import { useState } from "react";
+import InsuranceCard from "../components/InsuranceCard";
 
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -53,7 +54,15 @@ const Insurances = () => {
           Here are some of the many we accept.
         </p>
       </div>
-      <Carousel
+      <div className="w-full grid grid-cols-3 grid-rows-2 gap-10 ">
+        <InsuranceCard img="./florida-blue.png" />
+        <InsuranceCard img="./healthsun.png" />
+        <InsuranceCard img="./simply-healthcare.png" />
+        <InsuranceCard img="./devoted-health.png" />
+        <InsuranceCard img="./solis-health-plan.png" />
+        <InsuranceCard img="./oscar-health.png" />
+      </div>
+      {/* <Carousel
         className="w-full"
         value={insurances}
         numVisible={3}
@@ -61,8 +70,8 @@ const Insurances = () => {
         responsiveOptions={responsiveOptions}
         itemTemplate={insuranceTemplate}
         circular
-        autoplayInterval={4000}
-      />
+        autoplayInterval={1500}
+      /> */}
     </div>
   );
 };

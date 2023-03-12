@@ -6,6 +6,8 @@ import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
+
 const Layout = ({ children }) => {
   const [position, setPosition] = [];
 
@@ -64,7 +66,10 @@ const Layout = ({ children }) => {
   };
   return (
     <div>
-      <header className="flex  h-[14vh] w-full justify-evenly items-center  border-b">
+      <header
+        id="home"
+        className="flex  h-[14vh] w-full justify-evenly items-center  border-b"
+      >
         <img
           className="  w-56  h-20"
           src="../../Logo approved.png"
@@ -73,16 +78,16 @@ const Layout = ({ children }) => {
 
         <ul className="nav flex text-2xl   ">
           <li className="active">
-            <a href="#">Inicio</a>
+            <a href="#home">Inicio</a>
           </li>
           <li>
-            <a href="#">Servicios</a>
+            <a href="#services">Servicios</a>
           </li>
           <li>
-            <a href="#">Doctores</a>
+            <a href="#doctors">Doctores</a>
           </li>
           <li>
-            <a href="#">Historia</a>
+            <a href="#history">Historia</a>
           </li>
         </ul>
         <a
@@ -93,15 +98,15 @@ const Layout = ({ children }) => {
         </a>
       </header>
       <main className="px-20 pt-20 relative">
-        <div className="fixed  w-20 h-20 bg-green-400 flex flex-col top-[50%] right-0 cursor-pointer">
-          <BsFillArrowUpCircleFill />
-          <a onClick={() => ScrollToScreen("up")} className="text-xl bg-red-50">
-            up
-          </a>
+        <div className="fondo   bg-orange-100 "></div>
 
-          <a onClick={() => ScrollToScreen("down")} className="text-xl">
-            Down
-          </a>
+        <div className="fixed  w-[5vw] h-[15vh]  flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer">
+          <div onClick={() => ScrollToScreen("up")} className="">
+            <BsFillArrowUpCircleFill className=" text-6xl text-indigo-800 hover:scale-110 hover:bg-red-500 rounded-full m-0 p-0 transition-all" />
+          </div>
+          <div onClick={() => ScrollToScreen("down")}>
+            <BsFillArrowDownCircleFill className="text-6xl text-indigo-800 hover:scale-110 hover:bg-red-500 rounded-full m-0 p-0 transition-all" />
+          </div>
         </div>
         {children}
       </main>
