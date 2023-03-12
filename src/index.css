@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Biko';
-  src: url('./fonts/Biko_Regular.otf') format('OpenType');
+  src: url('/src/fonts/Biko_Regular.otf') format('OpenType');
   
 }
 
