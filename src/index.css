@@ -3,8 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Biko';
+  src: url('./fonts/Biko_Regular.otf') format('OpenType');
+  
+}
 
-
+/* 
 @font-face {
   font-family: 'Biko', sans-serif;
   src: url(./fonts/Biko_Regular.otf), format('OpenType');
@@ -20,14 +25,21 @@
 @font-face {
   font-family: 'Barchella', sans-serif;
   src: url(./fonts/Barchella_Drumal.otf), format('OpenType');
-}
+} */
 
 :root {
-  font-family: 'Biko', sans-serif;
+  font-family: 'Biko', serif;
   font-size: 16px;
   line-height: 24px;
  font-weight: 400;
 }
+
+/* .fonts{
+  font-family: 'Barchella', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+ font-weight: 400;
+} */
 
 
 html {

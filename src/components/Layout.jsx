@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
     console.log(answer.position);
   };
   return (
-    <div>
+    <div className="fonts">
       <header
         id="home"
         className="flex  h-[14vh] w-full justify-evenly items-center  border-b"
