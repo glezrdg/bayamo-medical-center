@@ -20,12 +20,18 @@ const Home = () => {
           friends!
         </p>
         <div className="w-2/3 flex justify-around mt-12">
-          <button className="bg-indigo-800  px-5  py-4 text-white rounded-full hover:scale-105 transition-all text-xl shadow-lg">
+          <a
+            href="#contact_us"
+            className="bg-indigo-800  px-5  py-4 text-white rounded-full hover:scale-105 transition-all text-xl shadow-lg"
+          >
             Get Appointment
-          </button>
-          <button className="border-indigo-800 border-2 rounded-full px-5 py-4 shadow-lg hover:scale-105 hover:bg-indigo-800 hover:text-white transition-all  text-indigo-800 text-xl">
+          </a>
+          <a
+            href="#doctors"
+            className="border-indigo-800 border-2 rounded-full px-5 py-4 shadow-lg hover:scale-105 hover:bg-indigo-800 hover:text-white transition-all  text-indigo-800 text-xl"
+          >
             Meet our team!
-          </button>
+          </a>
         </div>
       </div>
       <div>

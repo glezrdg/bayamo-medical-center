@@ -73,7 +73,6 @@ const Doctors = () => {
         responsiveOptions={responsiveOptions}
         itemTemplate={doctorsTemplate}
         circular
-        autoplayInterval={4000}
       />
     </div>
   );
