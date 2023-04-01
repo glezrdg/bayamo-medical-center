@@ -78,23 +78,31 @@ const Layout = ({ children }) => {
 
         <ul className="nav flex text-2xl   ">
           <li className="active">
-            <a href="#home">Inicio</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#services">Servicios</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#doctors">Doctores</a>
+            <a href="#doctors">Doctors</a>
           </li>
           <li>
-            <a href="#history">Historia</a>
+            <a href="#history">History</a>
           </li>
         </ul>
         <a
           href="#contact_us"
-          className="bg-indigo-800 flex items-center  px-5 py-4 text-white rounded-full border border-red-200 hover:scale-110 transition-all text-xl shadow-lg"
+          className=" bg-transparent text-transparent flex items-center   px-5 py-4    "
         >
-          Escribenos <AiOutlineMail className="ml-3" />
+          Send us a message!
+          <AiOutlineMail className="ml-3" />
+        </a>
+        <a
+          href="#contact_us"
+          className="bg-indigo-800 flex items-center fixed z-50 right-[10vw] px-5 py-4 text-white rounded-full   hover:scale-110 transition-all text-xl shadow-lg"
+        >
+          Send us a message!
+          <AiOutlineMail className="ml-3" />
         </a>
       </header>
       <main className="px-20 pt-20 relative">

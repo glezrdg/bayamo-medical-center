@@ -60,8 +60,8 @@ const Doctors = () => {
           Meet our{" "}
           <span className="text-indigo-800 underline">specialists</span>
         </h1>
-        <p className=" text-xl text-slate-700 mt-5">
-          The responsables to make you feel like home.
+        <p className=" text-2xl text-slate-700 mt-5  font-semibold">
+          The best team to make you feel like home.
         </p>
       </div>
 

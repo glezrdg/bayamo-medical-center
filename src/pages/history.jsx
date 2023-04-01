@@ -49,14 +49,15 @@ const History = () => {
           </h1>
           <h2 className="text-3xl  mt-5">Bayamo Medical Center</h2>
           <p className="w-5/6 text-xl mt-5 ">
-            "La historia comienza en Bayamo, un pequeño pueblo del oriente de
-            Cuba, donde unos jóvenes aspiraban a curar a las personas y sus
-            familias. Para lograrlo, se convirtieron en médicos y,
-            posteriormente, emigraron. <br />
-            <br /> El Dr. Luis Del Prado también reafirmó su carrera y se
-            convirtió nuevamente en médico. Transmitieron su vocación a sus
-            hijos, quienes siguieron sus pasos y continuaron sirviendo a las
-            familias como médicos."
+            "From Bayamo to Your Health - A Family Legacy of Healing. Our story
+            begins in a small town in Eastern Cuba where a group of young
+            aspiring healers dedicated their lives to treating people and their
+            families. <br />
+            <br /> Dr. Luis Del Prado with the help of his wife also followed
+            his passion and became a physician, passing on his legacy to his
+            children who continue to serve and care for families as doctors.
+            Join us and experience the compassionate care of a family committed
+            to your well-being."
           </p>
         </div>
         <div className="h-full  w-1/2 flex flex-col justify-center items-center ">

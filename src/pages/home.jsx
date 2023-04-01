@@ -5,18 +5,16 @@ const Home = () => {
     <div className="h-[80vh] flex relative">
       <div className=" w-1/2 h-full  flex flex-col pl-48 py-8 items-start justify-start ">
         <span className="font-bold text-2xl uppercase border-red-600 border p-2 text-red-600 shadowred  ">
-          Stay strong, live long.
+          Bayamo Medical Center
         </span>
-        <h1 className=" text-7xl font-bold mt-4 ">
-          <span className="text-indigo-800 underline font-medium">
-            Take care
-          </span>{" "}
-          of your body and it will take care of{" "}
-          <span className="text-indigo-800 underline font-medium">you</span>.
+        <h1 className=" text-7xl  font-semibold mt-4 ">
+          <span className="text-indigo-800 underline ">Your health</span> is our
+          priority. Exceptional care{" "}
+          <span className="text-indigo-800 underline ">guaranteed</span>.
         </h1>
         <p className="text-xl mt-4 text-slate-700">
-          Dr. Luis Del Prado MD (ARNP Specialist) and his wonderful and
-          professional team, is very eager to meet you, your beloved family, and
+          Dr. Luis Del Prado (Board Certified FM) and his wonderful and
+          professional team is very eager to meet you, your beloved family, and
           friends!
         </p>
         <div className="w-2/3 flex justify-around mt-12">

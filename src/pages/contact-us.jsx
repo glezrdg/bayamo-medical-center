@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { createPostRequest } from "../api/email.controller";
+import { createEmailRequest } from "../api/email.controller";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -42,7 +42,7 @@ const Contact = () => {
             const year = date.getFullYear();
             values.date = `${month}/${day}/${year}`;
             console.log(values);
-            await createPostRequest(values);
+            await createEmailRequest(values);
 
             toast.success("Your message has been sent!");
             actions.resetForm();
