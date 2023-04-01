@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="h-[100vh]  flex flex-col items-center justify-center mt-5 relative"
+      className="h-[100vh]  flex flex-col items-center justify-center relative"
     >
       <div className="absolute top-0 bottom-0 -right-20 -z-10 -left-20 bg-stone-100 "></div>
 
