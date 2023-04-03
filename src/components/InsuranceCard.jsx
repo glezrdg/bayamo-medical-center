@@ -5,7 +5,7 @@ const InsuranceCard = ({ img }) => {
     <img
       src={img}
       alt=""
-      className="w-80 h-auto  aspect-[3/2] object-contain m-auto"
+      className=" h-[18vh] max-sm:h-[12vh] md:h-[14vh] xl:h-[17vh]  aspect-[3/2] object-contain m-auto"
     />
   );
 };

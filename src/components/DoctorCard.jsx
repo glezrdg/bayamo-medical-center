@@ -2,15 +2,18 @@ import React from "react";
 
 const DoctorCard = ({ name, img, title }) => {
   return (
-    <div className=" w-80 h-[400px] p-4 bg-slate-100 rounded-md shadow-md flex flex-col items-center ">
+    <div className="2xl:w-[18vw] xl:w-[20vw]  lg:w-[24vw] md:w-[35vw] max-sm:w-[70vw] max-sm:h-5/6   h-full  p-4 bg-slate-100 rounded-md shadow-md flex flex-col items-center ">
       <img
         src={`${img}`}
         alt=""
-        className="w-full h-5/6 object-fill rounded-md hover:scale-105 transition-all"
+        className=" h-[30vh] max-sm:h-[50vh]  object-fill rounded-md  "
       />
-      <div className="flex flex-col items-center h-full justify-around py-5">
-        <h1 className="text-2xl font-semibold text-slate-700"> {name}</h1>
-        <h2 className="text-lg font-semibold text-slate-600">{title}</h2>
+      <div className="flex flex-col items-center h-full justify-around max-sm:justify-c pt-2">
+        <h1 className="text-2xl mt-2 max-sm:mt-0 font-semibold text-slate-700">
+          {" "}
+          {name}
+        </h1>
+        <h2 className="text-md font-semibold text-slate-600">{title}</h2>
       </div>
     </div>
   );

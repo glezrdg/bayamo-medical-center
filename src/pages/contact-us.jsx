@@ -7,12 +7,17 @@ const Contact = () => {
   return (
     <div
       id="contact_us"
-      className="h-[100vh] w-full bg-stone-100 relative flex flex-col justify-evenly items-center "
+      className="h-[100vh] max-sm:h-[120vh] w-full bg-stone-100 relative flex flex-col justify-evenly  items-center "
     >
-      <div className="bg-stone-100 absolute top-0 -right-20 -left-20 bottom-0 -z-10"></div>
+      <div className="absolute top-0 bottom-0 -z-10 2xl:-right-[14vw] xl:-right-[5vw] lg:-right-[4vw] md:-right-[5vw] 2xl:-left-[14vw] xl:-left-[5vw] lg:-left-[4vw] md:-left-[5vw]   max-sm:-left-5 max-sm:-right-5 bg-stone-100 lg:flex md:flex max-sm:flex xl:flex "></div>
+
       <div className="flex flex-col items-center">
-        <h1 className="text-7xl font-semibold ">Get in touch with us.</h1>
-        <h3 className="mt-3 text-xl">For us to get in touch with you.</h3>
+        <h1 className="2xl:text-6xl xl:text-6xl lg:text-6xl md:text-5xl max-sm:text-3xl font-bold ">
+          Get in touch with us.
+        </h1>
+        <h3 className="2xl:text-xl xl:text-xl lg:text-xl md:text-lg text-slate-700 mt-5">
+          For us to get in touch with you.
+        </h3>
       </div>
       <Formik
         initialValues={{
@@ -53,17 +58,17 @@ const Contact = () => {
         }}
       >
         {({ handleSubmit }) => (
-          <div className="w-[60vw] h-1/2  flex text-md text-slate-800 ">
+          <div className="w-[60vw]  max-sm:w-full md:w-full  flex max-sm:flex-col text-md text-slate-200  bg-gray-800 rounded-md shadow-md  p-5 ">
             <Toaster />
-            <Form onSubmit={handleSubmit} className="w-1/2 p-5">
+            <Form onSubmit={handleSubmit} className="w-1/2 max-sm:w-full  p-5">
               <div className="flex justify-between">
                 <div className="flex flex-col w-1/2 mr-2">
-                  <label htmlFor="">First name</label>
+                  <label htmlFor="">First name:</label>
                   <Field
                     maxLength="20"
                     name="firstName"
                     type="text"
-                    className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
+                    className="rounded-lg shadow-md bg-stone-100 focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
                   />
                   <ErrorMessage
                     component="p"
@@ -72,12 +77,12 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col w-1/2 ml-2">
-                  <label htmlFor="">Last name</label>
+                  <label htmlFor="">Last name:</label>
                   <Field
                     maxLength="20"
                     name="lastName"
                     type="text"
-                    className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
+                    className="bg-stone-100 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 mt-1 text-sm text-slate-700 w-full"
                   />
                   <ErrorMessage
                     component="p"
@@ -87,12 +92,12 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex flex-col mt-5">
-                <label htmlFor="">Email</label>
+                <label htmlFor="">Email:</label>
                 <Field
                   maxLength="40"
                   type="email"
                   name="email"
-                  className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
+                  className="rounded-lg shadow-md bg-stone-100 focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
                 />
                 <ErrorMessage
                   component="p"
@@ -105,7 +110,7 @@ const Contact = () => {
                 <Field
                   type="date"
                   name="date"
-                  className="w-full  h-9 text-sm text-slate-700 mt-1"
+                  className="rounded-lg shadow-md bg-stone-100 focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
                 />
                 <ErrorMessage
                   component="p"
@@ -118,9 +123,10 @@ const Contact = () => {
                 <Field
                   maxLength="200"
                   name="description"
+                  as="textarea"
                   id=""
                   rows="3"
-                  className="rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
+                  className="rounded-lg shadow-md bg-stone-100 focus:outline-none focus:ring-2 focus:ring-indigo-800 px-3 py-2 text-sm mt-1 text-slate-700 w-full"
                 />
                 <ErrorMessage
                   component="p"
@@ -128,25 +134,15 @@ const Contact = () => {
                   name="description"
                 />
               </div>
-              <button className="px-4 py-2 mt-4 bg-lime-500 rounded-sm shadow-lg float-right text-stone-100 hidden">
-                Send
+
+              <button
+                type="submit"
+                className="bg-indigo-800 mt-5 float-right  px-[1.5vw] py-[1.6vh] 2xl:text-lg xl:text-xl lg:text-md md:text-sm max-sm:text-sm text-white rounded-full hover:scale-105 transition-all  shadow-lg"
+              >
+                Send us a Message!
               </button>
-              <div className="w-full flex justify-around mt-10">
-                <button
-                  type="submit"
-                  className="bg-indigo-800  px-4  py-2 text-white rounded-full hover:scale-105 transition-all text-lg shadow-lg"
-                >
-                  Send us a Message!
-                </button>
-                <button
-                  className="border-indigo-800 border-2 rounded-full px-3 py-2 shadow-lg hover:scale-105 hover:bg-indigo-800 hover:text-white transition-all 
-            text-indigo-800 text-lg"
-                >
-                  Get an appointment
-                </button>
-              </div>
             </Form>
-            <div className="w-1/2 p-5 ">
+            <div className="w-1/2  max-sm:w-full p-5 bg-stone-100 rounded-md shadow-sm text-slate-800">
               <div className="flex flex-col">
                 <span>In case you want to do it by yourself:</span>
                 <span>Contact: (305) 639 8282 </span>

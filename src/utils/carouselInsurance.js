@@ -17,4 +17,13 @@ export const carouselInsurance = [
   {
     img: "./oscar-health.png",
   },
+  {
+    img: "./aetna.png",
+  },
+  {
+    img: "./molina-healthcare.png",
+  },
+  {
+    img: "./preferred-healthcare.png",
+  },
 ];

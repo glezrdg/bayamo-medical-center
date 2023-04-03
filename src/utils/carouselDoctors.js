@@ -1,17 +1,12 @@
 export const carouselDoctors = [
   {
     name: "Dr. Luis Del Prado",
-    title: "Board Certified AAFP",
+    title: "Board Certified FM",
     img: "./luis-del-prado.png",
   },
   {
-    name: "Dr. Ernesto Pena",
-    title: "ARNP",
-    img: "./doctor-blanco.png",
-  },
-  {
     name: "Dr. Thaimy Del Prado",
-    title: "Medical Assistant",
+    title: "Psychiatric Resident",
     img: "./thaimy.png",
   },
   {
@@ -20,8 +15,8 @@ export const carouselDoctors = [
     img: "./pavela-2.png",
   },
   {
-    name: "Luis del Prado",
-    title: "Medical Assistant",
+    name: "Luis del Prado Jr.",
+    title: "Medical Student",
     img: "./luisito.png",
   },
   {

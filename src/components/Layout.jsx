@@ -31,23 +31,23 @@ const Layout = ({ children }) => {
       path: "#home",
     },
     {
-      position: 1014,
+      position: 843.984375,
       path: "#services",
     },
     {
-      position: 1987.609375,
+      position: 1687.984375,
       path: "#doctors",
     },
     {
-      position: 2960.609375,
+      position: 2531.984375,
       path: "#history",
     },
     {
-      position: 3933.609375,
+      position: 3375.984375,
       path: "#insurances",
     },
     {
-      position: 4906.609375,
+      position: 4219.984375,
       path: "#contact_us",
     },
   ];
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
   const ScrollToScreen = (type) => {
     let position = window.scrollY + 80;
     let answer = positions[1];
-    // console.log(current, "curr");
+
     positions.forEach((item, i) => {
       if (type === "down") {
         if (position > item.position && position < positions[i + 1].position) {
@@ -69,20 +69,18 @@ const Layout = ({ children }) => {
           return;
         } else {
           if (position > item.position) {
-            console.log("se cumple");
             answer = positions[i - 1];
           }
         }
       }
     });
     window.scrollTo(80, answer.position);
-    console.log(answer.position);
   };
   return (
     <div className="fonts">
       <header
         id="home"
-        className="flex px-[14vw] 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-10   h-[14vh] max-sm:h-[10vh]  w-full justify-between items-center  border-b"
+        className="flex px-[14vw] 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5   h-[14vh] max-sm:h-[10vh]  w-full justify-between items-center  border-b"
       >
         <div
           className="overlay-menu flex items-center justify-center text-2xl font-bold text-white"
@@ -138,18 +136,18 @@ const Layout = ({ children }) => {
         </div>
 
         <img
-          className="xl:h-3/5 lg:h-1/2 md:h-2/5 max-sm:h-1/2"
+          className="xl:h-3/5 lg:h-1/2 md:h-1/2 max-sm:h-1/2"
           src="../../Logo approved.png"
           alt="Bayamo Medical Center"
         />
         <div
           onClick={openNav}
-          className="max-sm:flex xl:hidden md:hidden lg:hidden bg-indigo-800 p-3 shadow-lg  rounded-full text-white"
+          className="max-sm:flex xl:hidden md:flex lg:hidden bg-indigo-800 p-3 shadow-lg  rounded-full text-white"
         >
           <RxHamburgerMenu className="text-4xl max-sm:text-2xl hover:scale-110 transition-all" />
         </div>
 
-        <ul className="nav flex w-2/5 max-sm:hidden  justify-between  2xl:text-2xl xl:text-xl lg:text-xl md:text-lg max-sm:text-md ">
+        <ul className="nav flex w-2/5 max-sm:hidden md:hidden lg:flex xl:flex 2xl:flex justify-between  2xl:text-2xl xl:text-xl lg:text-xl md:text-lg max-sm:text-md ">
           <li className={`hover:text-red-600 hover:scale-105  transition-all `}>
             <a href="#home">Home</a>
           </li>
@@ -165,20 +163,20 @@ const Layout = ({ children }) => {
         </ul>
         <a
           href="#contact_us"
-          className=" bg-transparent text-transparent flex items-center px-[2vw] py-[2vh]   2xl:text-2xl xl:text-lg lg:text-xs md:text-xs max-sm:hidden    "
+          className=" bg-transparent text-transparent flex items-center px-[2vw] py-[2vh]   2xl:text-2xl xl:text-lg lg:text-xs lg:flex xl:flex 2xl:flex md:hidden md:text-xs max-sm:hidden    "
         >
           Send us a message!
           <AiOutlineMail className="ml-3" />
         </a>
         <a
           href="#contact_us"
-          className="bg-indigo-800  flex items-center fixed z-50 xl:right-[10vw] lg:right-10 md:right-1 max-sm:right-1 px-[2vw] py-[2vh] 2xl:text-2xl xl:text-lg lg:text-lg md:text-md max-sm:hidden  text-black rounded-full   hover:scale-105 transition-all  shadow-lg 2xl:bg-red-200 xl:bg-green-200 lg:bg-yellow-200 md:bg-blue-200 max-sm:bg-purple-200 "
+          className="bg-indigo-800 text-white flex items-center fixed z-50 xl:right-[10vw] lg:right-20 md:right-[35vw] max-sm:right-1 px-[2vw] py-[2vh] 2xl:text-2xl xl:text-lg lg:text-lg md:text-md lg:flex xl:flex 2xl:flex md:hidden max-sm:hidden   rounded-full   hover:scale-[1.02] transition-all  shadow-lg  "
         >
           Send us a message!
           <AiOutlineMail className="ml-3" />
         </a>
       </header>
-      <main className=" 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-10  py-[10vh] relative overflow-hidden">
+      <main className=" 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5     relative ">
         <div className="fixed  w-[5vw] h-[15vh] md:hidden lg:hidden max-sm:hidden xl:flex  flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer">
           <div onClick={() => ScrollToScreen("up")} className="">
             <BsFillArrowUpCircleFill className=" text-6xl text-indigo-800 hover:scale-110 hover:bg-red-500 rounded-full m-0 p-0 transition-all" />
