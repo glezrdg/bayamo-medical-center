@@ -2,7 +2,7 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="h-[86vh] max-sm:h-[90vh] w-full  flex max-sm:flex-col  relative max-sm:text-xs  py-[10vh] max-sm:py-[4vh] ">
+    <div className="h-[100vh] max-sm:h-[100vh] w-full  flex max-sm:flex-col  relative max-sm:text-xs  py-[10vh] max-sm:py-[4vh]  pt-[20vh] max-sm:pt-[12vh]">
       <div className=" w-1/2 max-sm:w-full h-full max-sm:h-1/2  flex flex-col  items-start justify-start  max-sm:items-center">
         <span className="font-bold 2xl:text-2xl xl:text-2xl lg:text-lg md:text-md uppercase border-red-600 border p-2 text-red-600 shadowred  ">
           Bayamo Medical Center

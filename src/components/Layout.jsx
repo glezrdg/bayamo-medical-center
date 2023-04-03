@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
     <div className="fonts">
       <header
         id="home"
-        className="flex px-[14vw] 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5   h-[14vh] max-sm:h-[10vh]  w-full justify-between items-center  border-b"
+        className=" fixed z-50 bg-white flex px-[14vw] 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5   h-[12vh] max-sm:h-[10vh]  w-full justify-between items-center  border-b"
       >
         <div
           className="overlay-menu flex items-center justify-center text-2xl font-bold text-white"
@@ -163,20 +163,13 @@ const Layout = ({ children }) => {
         </ul>
         <a
           href="#contact_us"
-          className=" bg-transparent text-transparent flex items-center px-[2vw] py-[2vh]   2xl:text-2xl xl:text-lg lg:text-xs lg:flex xl:flex 2xl:flex md:hidden md:text-xs max-sm:hidden    "
-        >
-          Send us a message!
-          <AiOutlineMail className="ml-3" />
-        </a>
-        <a
-          href="#contact_us"
-          className="bg-indigo-800 text-white flex items-center fixed z-50 xl:right-[10vw] lg:right-20 md:right-[35vw] max-sm:right-1 px-[2vw] py-[2vh] 2xl:text-2xl xl:text-lg lg:text-lg md:text-md lg:flex xl:flex 2xl:flex md:hidden max-sm:hidden   rounded-full   hover:scale-[1.02] transition-all  shadow-lg  "
+          className=" bg-indigo-800 text-white rounded-full   hover:scale-[1.02] transition-all  shadow-lg  flex items-center px-[2vw] py-[2vh]   2xl:text-2xl xl:text-lg lg:text-xs lg:flex xl:flex 2xl:flex md:hidden md:text-xs max-sm:hidden    "
         >
           Send us a message!
           <AiOutlineMail className="ml-3" />
         </a>
       </header>
-      <main className=" 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5     relative ">
+      <main className=" 2xl:px-[14vw] xl:px-[5vw]  lg:px-[4vw] md:px-[5vw]  max-sm:px-5    relative ">
         <div className="fixed  w-[5vw] h-[15vh] md:hidden lg:hidden max-sm:hidden xl:flex  flex flex-col justify-between items-center top-[50%] right-0 z-50 cursor-pointer">
           <div onClick={() => ScrollToScreen("up")} className="">
             <BsFillArrowUpCircleFill className=" text-6xl text-indigo-800 hover:scale-110 hover:bg-red-500 rounded-full m-0 p-0 transition-all" />

@@ -11,7 +11,7 @@ const Contact = () => {
     >
       <div className="absolute top-0 bottom-0 -z-10 2xl:-right-[14vw] xl:-right-[5vw] lg:-right-[4vw] md:-right-[5vw] 2xl:-left-[14vw] xl:-left-[5vw] lg:-left-[4vw] md:-left-[5vw]   max-sm:-left-5 max-sm:-right-5 bg-stone-100 lg:flex md:flex max-sm:flex xl:flex "></div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-[10vh]">
         <h1 className="2xl:text-6xl xl:text-6xl lg:text-6xl md:text-5xl max-sm:text-3xl font-bold ">
           Get in touch with us.
         </h1>
@@ -58,7 +58,7 @@ const Contact = () => {
         }}
       >
         {({ handleSubmit }) => (
-          <div className="w-[60vw]  max-sm:w-full md:w-full  flex max-sm:flex-col text-md text-slate-200  bg-gray-800 rounded-md shadow-md  p-5 ">
+          <div className="w-[60vw]  max-sm:w-full md:w-full  flex max-sm:flex-col text-md text-slate-200  bg-slate-600 rounded-md shadow-md  p-5 ">
             <Toaster />
             <Form onSubmit={handleSubmit} className="w-1/2 max-sm:w-full  p-5">
               <div className="flex justify-between">
@@ -137,13 +137,13 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-indigo-800 mt-5 float-right  px-[1.5vw] py-[1.6vh] 2xl:text-lg xl:text-xl lg:text-md md:text-sm max-sm:text-sm text-white rounded-full hover:scale-105 transition-all  shadow-lg"
+                className="border-slate-200  border-2 hover:bg-indigo-800 hover:text-white   mt-5 float-right  px-[1.5vw] py-[1.6vh] 2xl:text-lg xl:text-xl lg:text-md md:text-sm max-sm:text-sm text-slate-100 rounded-full hover:scale-105 transition-all  shadow-lg"
               >
                 Send us a Message!
               </button>
             </Form>
             <div className="w-1/2  max-sm:w-full p-5 bg-stone-100 rounded-md shadow-sm text-slate-800">
-              <div className="flex flex-col">
+              <div className="flex flex-col max-sm:text-sm">
                 <span>In case you want to do it by yourself:</span>
                 <span>Contact: (305) 639 8282 </span>
                 <span>Email: bayamomedicalcenter@hotmail.com</span>
@@ -153,7 +153,7 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.5369170873325!2d-80.3424585496085!3d25.732629799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c143efe307%3A0x5300a713544743dc!2sBayamo%20Medical%20Center!5e0!3m2!1sen!2sdo!4v1677985443737!5m2!1sen!2sdo"
                 loading="lazy"
-                className="w-full h-2/3 rounded-lg shadow-lg"
+                className="w-full h-2/3 rounded-lg shadow-lg "
               ></iframe>
             </div>
           </div>
